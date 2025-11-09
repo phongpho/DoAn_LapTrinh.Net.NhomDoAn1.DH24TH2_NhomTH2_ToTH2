@@ -12,20 +12,7 @@ namespace QuanLySinhVien
 {
     public partial class frmMain : Form
     {
-        private void OpenForm(Form formToOpen)
-        {
-            foreach (Form childForm in this.MdiChildren)
-            {
-                if (childForm.Name == formToOpen.Name)
-                {
-                    childForm.Activate(); 
-                    return; 
-                }
-            }
-            
-            formToOpen.MdiParent = this; 
-            formToOpen.Show();
-        }
+        
         public frmMain()
         {
             InitializeComponent();
@@ -43,7 +30,32 @@ namespace QuanLySinhVien
 
         private void quảnLýKhoaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenForm(new frmQuanLyKhoa());
+            this.Hide(); 
+
+            frmQuanLyKhoa fKhoa = new frmQuanLyKhoa();
+            fKhoa.ShowDialog(); 
+
+            this.Show();
+        }
+
+        private void quảnLýLopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide(); 
+
+            frmQuanLyLop fLop = new frmQuanLyLop();
+            fLop.ShowDialog(); 
+
+            this.Show();
+        }
+
+        private void quảnLýMônHọcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide(); 
+
+            frmQuanLyMonHoc fMonHoc = new frmQuanLyMonHoc();
+            fMonHoc.ShowDialog();
+
+            this.Show();
         }
     }
 }
