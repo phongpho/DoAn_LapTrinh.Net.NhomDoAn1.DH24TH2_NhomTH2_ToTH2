@@ -1,10 +1,12 @@
 # 🪟 ĐỒ ÁN LẬP TRÌNH .NET - QUẢN LÝ SINH VIÊN
 
 ## 👨‍💻 Thông tin nhóm
-| Họ và tên | MSSV | Lớp |
-|------------|--------|---------|-----------|
+
+| Họ và tên        | MSSV       | Lớp      |
+|------------------|------------|-----------|
 | **Phó Bảo Phong** | **DTH235731** | **DH24TH2** |
-| **Tống Nhựt Nam** | **DTH2357** | **DH24TH2** |
+| **Tống Nhựt Nam** | **DTH2357**   | **DH24TH2** |
+
 
 ---
 
