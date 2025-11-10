@@ -12,12 +12,17 @@ namespace QuanLySinhVien
 {
     public partial class frmMain : Form
     {
-        
+        private bool isAdmin;   
         public frmMain()
         {
             InitializeComponent();
         }
 
+        public frmMain(bool trangthai) 
+        {
+            InitializeComponent();
+            this.isAdmin = trangthai;
+        }
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -25,7 +30,13 @@ namespace QuanLySinhVien
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            if (this.isAdmin == false)
+            {
+                danhMucToolStripMenuItem.Enabled = false;
+                nghiepVuToolStripMenuItem.Enabled = false;
 
+                //heThongToolStripMenuItem.Enabled = false;
+            }
         }
 
         private void quảnLýKhoaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,6 +65,16 @@ namespace QuanLySinhVien
 
             frmQuanLyMonHoc fMonHoc = new frmQuanLyMonHoc();
             fMonHoc.ShowDialog();
+
+            this.Show();
+        }
+
+        private void quảnLýSinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide(); 
+
+            frmQuanLySinhVien fSinhVien = new frmQuanLySinhVien();
+            fSinhVien.ShowDialog(); 
 
             this.Show();
         }

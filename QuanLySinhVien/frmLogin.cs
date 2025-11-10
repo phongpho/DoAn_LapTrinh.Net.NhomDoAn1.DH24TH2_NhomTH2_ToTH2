@@ -27,20 +27,32 @@ namespace QuanLySinhVien
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = txtUsername.Text;
-            string password = txtPassword.Text;
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text.Trim();
 
-            if( username == "1" && password == "1" )
+            bool trangthai;
+
+            if (username == "admin" && password == "1")
             {
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Hide();
-                frmMain mainForm = new frmMain();
-                mainForm.Show();
+                trangthai = true; //admin
+                MessageBox.Show("Đăng nhập thành công với quyền Admin!");
+            }
+            else if (username == "sv" && password == "1") 
+            {
+                trangthai = false; //sinhvien
+                MessageBox.Show("Đăng nhập thành công với quyền Sinh Viên!");
             }
             else
             {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+    
+                MessageBox.Show("Sai tên đăng nhập hoặc mật khẩu!", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
+
+  
+            this.Hide();
+            frmMain fMain = new frmMain(trangthai);
+            fMain.Show();
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
