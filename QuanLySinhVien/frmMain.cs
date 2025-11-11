@@ -78,5 +78,25 @@ namespace QuanLySinhVien
 
             this.Show();
         }
+
+        private void nhậpĐiểmTíchLũyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            frmDiemTichLuy fDiem = new frmDiemTichLuy();
+            fDiem.ShowDialog();
+
+            this.Show();
+        }
+
+        private void nhậpĐiểmRènLuyệnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            frmDiemRenLuyen fDiemRL = new frmDiemRenLuyen();
+            fDiemRL.ShowDialog();
+
+            this.Show();
+        }
     }
 }
