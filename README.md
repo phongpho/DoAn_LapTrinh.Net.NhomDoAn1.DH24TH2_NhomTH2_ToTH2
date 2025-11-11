@@ -43,7 +43,7 @@
 ### 🛠️ Quản lý Nghiệp vụ (CRUD)
 - **Quản lý Sinh viên** – Form: `frmQuanLySinhVien` *(Form phức tạp nhất, có nhiều điều khiển và liên kết dữ liệu)*  
 - **Quản lý Điểm Tích Lũy** – Form: `frmDiemTichLuy`  
-- **Quản lý Điểm Rèn Luyện** – Form: `frmQuanLyDiemRenLuyen`  
+- **Quản lý Điểm Rèn Luyện** – Form: `frmDiemRenLuyen`  
 
 ### 📊 Tra cứu
 - **Form:** `frmTraCuuDiem`  
