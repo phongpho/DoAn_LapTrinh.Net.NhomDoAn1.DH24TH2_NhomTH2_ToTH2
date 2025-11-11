@@ -28,7 +28,8 @@
 ---
 
 ## ✨ Tính năng chính
-Ứng dụng cho phép **Admin** thực hiện các nghiệp vụ quản lý cơ bản:
+Ứng dụng cho phép **Admin** thực hiện quản lý khoa, lớp, môn học và sinh viên
+Ứng dụng cho phép **Sinh viên** tra cứu thông tin cá nhân và điểm số các môn học cũng như điểm rèn luyện các học kỳ
 
 ### 🔐 Đăng nhập
 - Hệ thống phân quyền và **phân tách giao diện** dành cho Admin.  
