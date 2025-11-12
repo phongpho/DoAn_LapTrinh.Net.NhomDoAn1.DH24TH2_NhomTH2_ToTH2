@@ -28,7 +28,9 @@
 ---
 
 ## ✨ Tính năng chính
-Ứng dụng cho phép **Admin** thực hiện các nghiệp vụ quản lý cơ bản:
+Ứng dụng cho phép **Admin** thực hiện quản lý khoa, lớp, môn học và sinh viên
+
+Ứng dụng cho phép **Sinh viên** tra cứu thông tin cá nhân và điểm số các môn học cũng như điểm rèn luyện các học kỳ
 
 ### 🔐 Đăng nhập
 - Hệ thống phân quyền và **phân tách giao diện** dành cho Admin.  
@@ -41,7 +43,7 @@
 ### 🛠️ Quản lý Nghiệp vụ (CRUD)
 - **Quản lý Sinh viên** – Form: `frmQuanLySinhVien` *(Form phức tạp nhất, có nhiều điều khiển và liên kết dữ liệu)*  
 - **Quản lý Điểm Tích Lũy** – Form: `frmDiemTichLuy`  
-- **Quản lý Điểm Rèn Luyện** – Form: `frmQuanLyDiemRenLuyen`  
+- **Quản lý Điểm Rèn Luyện** – Form: `frmDiemRenLuyen`  
 
 ### 📊 Tra cứu
 - **Form:** `frmTraCuuDiem`  
