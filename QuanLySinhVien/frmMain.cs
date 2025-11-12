@@ -98,5 +98,13 @@ namespace QuanLySinhVien
 
             this.Show();
         }
+
+        private void sinhViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            frmTraCuuThongTin fTraCuu = new frmTraCuuThongTin();
+            fTraCuu.ShowDialog();
+            this.Show();
+        }
     }
 }
